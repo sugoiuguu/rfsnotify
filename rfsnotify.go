@@ -2,11 +2,11 @@
 package rfsnotify
 
 import (
-	"gopkg.in/fsnotify.v1"
-
 	"errors"
 	"os"
 	"path/filepath"
+
+	"github.com/fsnotify/fsnotify"
 )
 
 // RWatcher wraps fsnotify.Watcher. When fsnotify adds recursive watches, you should be able to switch your code to use fsnotify.Watcher
